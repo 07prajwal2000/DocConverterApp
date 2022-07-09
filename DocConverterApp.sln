@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.32602.291
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DocConverter", "DocConverter\DocConverter.csproj", "{D19F83C6-51CD-4EC5-A240-0B7D52A4CF67}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DocConverterInstaller", "DocConverterInstaller\DocConverterInstaller.csproj", "{58EE707F-778A-4979-B37A-4A5491773677}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D19F83C6-51CD-4EC5-A240-0B7D52A4CF67}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D19F83C6-51CD-4EC5-A240-0B7D52A4CF67}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D19F83C6-51CD-4EC5-A240-0B7D52A4CF67}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D19F83C6-51CD-4EC5-A240-0B7D52A4CF67}.Release|Any CPU.Build.0 = Release|Any CPU
+		{58EE707F-778A-4979-B37A-4A5491773677}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{58EE707F-778A-4979-B37A-4A5491773677}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{58EE707F-778A-4979-B37A-4A5491773677}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{58EE707F-778A-4979-B37A-4A5491773677}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {09EAFB78-5179-4306-802B-E491E8AD572F}
+	EndGlobalSection
+EndGlobal

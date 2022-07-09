@@ -1,0 +1,34 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net472</TargetFramework>
+    <RunPostBuildEvent>OnOutputUpdated</RunPostBuildEvent>
+    <LangVersion>preview</LangVersion>
+    <SignAssembly>False</SignAssembly>
+    <ApplicationIcon>images.ico</ApplicationIcon>
+	  <Authors>Prajwal Aradhya S K</Authors>
+	  <ApplicationManifest>app.manifest</ApplicationManifest>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Resources\docConverter.zip" />
+    <None Remove="Resources\Owner.txt" />
+    <None Remove="Resources\RegistryData\RegistryFile.reg" />
+    <None Remove="Resources\RegistryData\TestFile.txt" />
+    <EmbeddedResource Include="Resources\docConverter.zip" />
+    <EmbeddedResource Include="Resources\Owner.txt" />
+    <None Remove="Resources\Title_ASCII.txt" />
+    <EmbeddedResource Include="Resources\RegistryData\TestFile.txt" />
+    <EmbeddedResource Include="Resources\Title_ASCII.txt" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="System.IO.Compression" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\RegistryData\RegistryFile.reg" />
+  </ItemGroup>
+
+</Project>

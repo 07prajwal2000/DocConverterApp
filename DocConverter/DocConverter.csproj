@@ -1,0 +1,61 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net472</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <RunPostBuildEvent>OnOutputUpdated</RunPostBuildEvent>
+    <SignAssembly>False</SignAssembly>
+	  <LangVersion>preview</LangVersion>
+	  <ApplicationIcon>Resources\icon.ico</ApplicationIcon>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DebugType>none</DebugType>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <DebugType>none</DebugType>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Resources\DocToPdf_ASCII.txt" />
+    <None Remove="Resources\icon.ico" />
+    <None Remove="Resources\Owner.txt" />
+    <None Remove="Resources\PdfCompress_ASCII.txt" />
+    <None Remove="Resources\PdfToDoc_ASCII.txt" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="Resources\icon.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Aspose.PDF" Version="22.6.0" />
+    <PackageReference Include="Syncfusion.DocIO.Net.Core" Version="20.1.0.61" />
+    <PackageReference Include="Syncfusion.DocIORenderer.Net.Core" Version="20.1.0.61" />
+    <PackageReference Include="Syncfusion.Licensing" Version="20.1.0.61" />
+    <PackageReference Include="Syncfusion.Pdf.Imaging.Net.Core" Version="20.1.0.61" />
+    <PackageReference Include="Syncfusion.Pdf.Net.Core" Version="20.1.0.61" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\DocToPdf_ASCII.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\Owner.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\PdfCompress_ASCII.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\PdfToDoc_ASCII.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+  </ItemGroup>
+
+</Project>
